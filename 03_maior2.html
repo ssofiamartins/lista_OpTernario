@@ -4,10 +4,16 @@
     //Construa um algoritmo que leia dois números inteiros. Verifique qual dos dois números é maior e o escreva.
 
     //Entrada
-
+    const valorUm = Number(prompt(`Informe um número`));
+    const valorDois = Number(prompt(`Informe outro número`));
     
     //Processamento
-
+    (valorUm > valorDois) ? 
+        alert(`${valorUm} é maior que ${valorDois}`) :
+    (valorDois > valorUm) ?
+        alert(`${valorDois} é maior que ${valorUm}`) :
+        alert(`Os dois números são iguais`);
+    
     
     //Saída
     
