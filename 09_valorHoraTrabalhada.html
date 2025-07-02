@@ -8,9 +8,22 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
-
+    const horaTrabalhada = Number(prompt(`Informe a quantidade de horas trabalhadas semanalmente`));
+    const recebe = Number(prompt(`Informe o quanto você recebe por hora trabalhada`));
+  
     //Processamento
+      const salario = horaTrabalhada * recebe;
+      const salario20 = salario + (salario * 20/100);
+      const salario30 = salario + (salario * 30/100);
+      const hora20 = salario20 / horaTrabalhada;
+      const hora30 = salario30 / horaTrabalhada;
+      const horaNormal = salario / horaTrabalhada;
+
+      (horaTrabalhada > 0 && horaTrabalhada <= 45)?
+        alert(`Seu salário final é de R$${salario} e o valor da hora trabalhada é de R$${horaNormal}`):
+        (horaTrabalhada > 45 && horaTrabalhada <= 60)?
+            alert(`Seu salário final é de R$${salario20} e o valor da hora trabalhada é de R$${hora20}`):
+            alert(`Seu salário final é de R$${salario30} e o valor da hora trabalhada é de R$${hora30}`);
 
     
     //Saída

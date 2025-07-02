@@ -7,13 +7,25 @@
     // - Conta de telefone
     // - Supermercado
     // Também peça para o usuário informar o valor que recebe de remuneração mensal (salário), proveniente da sua atuação profissional.
-    // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
+    // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das
+    //  contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-
+    const agua = Number(prompt(`Informe as despesas relacionadas com conta de água`));
+    const luz = Number(prompt(`Informe as despesas relacionadas com conta de luz`));
+    const telefone = Number(prompt(`Informe as despesas relacionadas com conta de telefone`));
+    const mercado = Number(prompt(`Informe as despesas relacionadas com supermercado`));
+    const salario = Number(prompt(`Informe por último o seu salário atual`));
+    
 
     //Processamento
+    const total = agua + luz + telefone + mercado;
+    const sobrou = salario - total;
+    const faltou = total - salario;
 
+    (salario >= total) ?
+        alert(`Você ganha mais do que gasta! Após o pagamento sobraram R$${sobrou}`):
+        alert(`Você gasta mais do que ganha. Faltaram R$${faltou} para poder pagar todas as contas previstas`);
     
     //Saída
     
