@@ -10,11 +10,19 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const nota = Number(prompt(`Informe sua nota`));
 
     //Processamento
+    (nota >= 0 && nota <= 5.9) ?
+        alert(`Conceito: E`):
+        (nota > 5.9 && nota <= 6.9) ?
+            alert(`Conceito: D`):
+            (nota > 6.9 && nota <= 7.9) ?
+                alert(`Conceito: C`):
+                (nota > 7.9 && nota <= 8.9) ?
+                    alert(`Conceito B`):
+                    alert(`Conceito: A`);
 
     
     //Saída
-
 </script>

@@ -20,10 +20,10 @@
       const horaNormal = salario / horaTrabalhada;
 
       (horaTrabalhada > 0 && horaTrabalhada <= 45)?
-        alert(`Seu salário final é de R$${salario} e o valor da hora trabalhada é de R$${horaNormal}`):
+        alert(`Seu salário final é de R$${salario.toFixed(2)} e o valor da hora trabalhada é de R$${horaNormal.toFixed(2)}`):
         (horaTrabalhada > 45 && horaTrabalhada <= 60)?
-            alert(`Seu salário final é de R$${salario20} e o valor da hora trabalhada é de R$${hora20}`):
-            alert(`Seu salário final é de R$${salario30} e o valor da hora trabalhada é de R$${hora30}`);
+            alert(`Seu salário final é de R$${salario20.toFixed(2)} e o valor da hora trabalhada é de R$${hora20.toFixed(2)}`):
+            alert(`Seu salário final é de R$${salario30.toFixed(2)} e o valor da hora trabalhada é de R$${hora30.toFixed(2)}`);
 
     
     //Saída
